@@ -1,0 +1,72 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Personal IT blog 
+email: bogdan.mocanu@gmail.com
+
+description: >- # this means to ignore newlines until "baseurl:"
+  A minimalist, bare-bones theme for Jekyll only using the Water.css
+  framework while still following the best practices possible for
+  accessibility and search-engine optimization.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://bmocanu.github.io"
+repository: bmocanu/bmocanu.github.io
+twitter: bmocanu
+github: bmocanu
+
+google_analytics:
+comments: true
+disqus: 
+
+author: Bogdan Mocanu
+author_bio: >-
+  Hey there! TODO
+author_pic: https://gravatar.com/userimage/1364365/34959873257b3719b1f714b196b78a8c.jpeg?size=128
+
+paginate: 4
+paginate_path: "/:num/"
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+permalink: /:title
+
+# Allows all pages to be put into `_pages` folder
+# for easier navigation and better SEO.
+collections:
+  pages:
+    output: true
+    permalink: /:title
+
+# Exclude from processing.
+exclude:
+  - ".jekyll-cache"
+  - "Gemfile"
+  - "Gemfile.lock"

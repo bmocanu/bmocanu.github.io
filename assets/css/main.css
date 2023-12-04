@@ -1,0 +1,101 @@
+body {
+    font-size: 120%;
+    max-width: 60rem;
+}
+
+navigation {
+    font-size: 100%;
+}
+
+body nav:first-of-type {
+    padding: 0 calc((100vw - 60rem) / 2);
+}
+
+h1,
+figcaption,
+#description,
+#navigation,
+#author h3 {
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+#title a {
+    color: #ffb300;
+}
+
+#navigation a {
+    font-weight: bold;
+}
+
+#h-card {
+    overflow: auto;
+    padding: 0px 10px 15px;
+}
+
+#h-card img {
+    float: left;
+    max-height: 80px;
+    margin-top: -10px;
+    margin-right: 15px;
+    border-radius: .4em;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+#h-card h3 {
+    margin-top: 5px;
+}
+
+#pages {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#current-page {
+    padding: 0px 15px;
+}
+
+#social {
+    text-align: right;
+}
+
+a {
+    color: #6a8ef8;
+}
+
+/* ACCESSIBILITY */
+a.skip-main {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+}
+
+a.skip-main:focus,
+a.skip-main:active {
+    color: #fff;
+    background-color: #000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow: auto;
+    margin: 10px 35%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 4px solid yellow;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
+}
+
+article {
+    border: 1px solid #ffb300;
+}
